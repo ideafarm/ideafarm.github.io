@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta name="robots" content="noindex">
+    <title>
+        Wo'O's Table:
+    </title>
+    <script type="text/javascript">
+
+        var hTimer = 0 ;
+        var idDefaultMessageLath = 0 ;
+
+        function clearMessageF()
+        {
+            if( hTimer )
+            {
+                clearTimeout( hTimer ) ;
+                hTimer = 0 ;
+            }
+
+            document.getElementById( "message1" ).innerHTML = "&thinsp;" ;
+        }
+
+        function sayMessageF( postP , msP )
+        {
+            if( hTimer )
+            {
+                clearTimeout( hTimer ) ;
+                hTimer = 0 ;
+            }
+
+            if( !postP )
+            {
+                if( !msP ) msP = 16000 ;
+                sayMessageDefaultF( msP ) ;
+            }
+            else
+            {
+                document.getElementById( "message1" ).innerHTML = postP ;
+
+                if( msP )
+                {
+                    /*hTimer = setTimeout( " clearMessageF() " , msP ) ;*/
+                }
+            }
+        }
+
+        function sayMessageDefaultF( msP )
+        {
+            switch( ( ++ idDefaultMessageLath ) % 0x10 )
+            {
+                case 1  : { sayMessageF( "This is an IdeaFarm (tm) Knowledge Tree, rendered as foreign (conventional linear) text." , msP ) ; break ; }
+                case 4  : { sayMessageF( "Do not fear that you will die.  Fear that you might never live!" , msP ) ; break ; }
+                default : { clearMessageF() ; break ; }
+            }
+        }
+
+    </script>
+</head>
+
+<body style="font-family:arial ; background-color:#fff ; color:#000" onload="sayMessageDefaultF( 16000 )">
+
+    <style type="text/css">
+        A:link
+        {
+            color: #000 ;
+            text-decoration: none ;
+            border-style: solid ;
+            border-width: 0px 1px 0px 0px ;
+            border-color: #000 ;
+        }
+        A:visited
+        {
+            color: #000 ;
+            text-decoration: none ;
+            border-style: solid ;
+            border-width: 0px 1px 0px 0px ;
+            border-color: #000 ;
+        } 
+        A:hover
+        {
+            color: #000 ;
+            text-decoration: none ;
+            border-style: solid ;
+            border-width: 1px 1px 1px 0px ; 
+            border-color: #000 ;
+        }
+        A:active
+        {
+            color: #000 ;
+            text-decoration: none ;
+            border-style: solid ;
+            border-width: 1px 1px 1px 0px ;
+            border-color: #000 ;
+        }
+        H3
+        {
+            color: #000 ;
+            text-decoration: none ;
+            border-style: solid ;
+            border-width: 1px 8px 1px 8px ;
+            border-color: #000 ;
+        }
+    </style>
+
+    <a href="index.z.black.d36160b6.10000000.html" onmouseout="sayMessageF( 0 , 16000 )" onmouseover="sayMessageF( 'Click to change the color scheme to yellow on black (for viewing).' , 0 )">black</a>
+    <a href="http://about.ideafarm.com/index.white.html">about</a>
+                                            <a href="../index.white.html" onmouseout="sayMessageF( 0 , 16000 )" onmouseover="sayMessageF( 'Click to climb down one level to view the page on which I am the topic sentence of a paragraph.' , 0 )">down1</a>
+    <p>
+    <hr>
+    <p>
+Wo'O's Table:    <p>
+    <hr>
+    <p>
+
+      Wo'O's Table is a subscription service that enables unselfish people to find each other and interact via email to get to know each other and to form local "eat together" groups.
+      Think of Wo'O's Table as an economic association for unselfish people.
+      Wo'O's Table is not religious but is friendly to religion.
+      Everywo is welcome.
+      Subscribers pay $X per month after the woth month, which is free.
+      X is currently set very low and will double without notice several times as growth goals are reached.
+
+
+</html>
