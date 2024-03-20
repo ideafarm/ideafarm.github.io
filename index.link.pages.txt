@@ -15,7 +15,7 @@
 
         {label:
             {key: !myRoot }
-            {value: "Wo'O's Table" }
+            {value: "IdeaFarm (tm) Piggyback Distributed Operating System for MS Windows" }
         }
     }
 }
