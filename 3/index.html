@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+
+    <title>
+        IdeaFarm (tm) Piggyback Distributed Operating System for MS Windows
+    </title>
+    <script type="text/javascript">
+
+        var hTimer = 0 ;
+        var idDefaultMessageLath = 0 ;
+
+        function clearMessageF()
+        {
+            if( hTimer )
+            {
+                clearTimeout( hTimer ) ;
+                hTimer = 0 ;
+            }
+
+            document.getElementById( "message1" ).innerHTML = "&thinsp;" ;
+        }
+
+        function sayMessageF( postP , msP )
+        {
+            if( hTimer )
+            {
+                clearTimeout( hTimer ) ;
+                hTimer = 0 ;
+            }
+
+            if( !postP )
+            {
+                if( !msP ) msP = 16000 ;
+                sayMessageDefaultF( msP ) ;
+            }
+            else
+            {
+                document.getElementById( "message1" ).innerHTML = postP ;
+
+                if( msP )
+                {
+                    /*hTimer = setTimeout( " clearMessageF() " , msP ) ;*/
+                }
+            }
+        }
+
+        function sayMessageDefaultF( msP )
+        {
+            switch( ( ++ idDefaultMessageLath ) % 0x10 )
+            {
+                case 1  : { sayMessageF( "This is an IdeaFarm (tm) Knowledge Tree, rendered as foreign (conventional linear) text." , msP ) ; break ; }
+                case 4  : { sayMessageF( "Do not fear that you will die.  Fear that you might never live!" , msP ) ; break ; }
+                default : { clearMessageF() ; break ; }
+            }
+        }
+
+    </script>
+</head>
+
+<body style="font-family:arial ; background-color:#000 ; color:#ff6" onload="sayMessageDefaultF( 16000 )">
+
+    <style type="text/css">
+        A:link
+        {
+            color: #ff6 ;
+            text-decoration: none ;
+            border-style: solid ;
+            border-width: 0px 1px 0px 0px ;
+            border-color: green ;
+        }
+        A:visited
+        {
+            color: #ff6 ;
+            text-decoration: none ;
+            border-style: solid ;
+            border-width: 0px 1px 0px 0px ;
+            border-color: red ;
+        } 
+        A:hover
+        {
+            color: #ff6 ;
+            text-decoration: none ;
+            border-style: solid ;
+            border-width: 1px 1px 1px 0px ; 
+            border-color: #ff6 ;
+        }
+        A:active
+        {
+            color: white ;
+            text-decoration: none ;
+            border-style: solid ;
+            border-width: 1px 1px 1px 0px ;
+            border-color: white ;
+        }
+        H3
+        {
+            color: #ff6 ;
+            text-decoration: none ;
+            border-style: solid ;
+            border-width: 1px 8px 1px 8px ;
+            border-color: #ff6 ;
+        }
+    </style>
+
+    <a href="index.white.html" onmouseout="sayMessageF( 0 , 16000 )" onmouseover="sayMessageF( 'Click to change the color scheme to black on white (for printing).' , 0 )">white</a>
+    <a href="http://about.ideafarm.com/index.html">about</a>
+        <p>
+    <hr>
+    <p>
+IdeaFarm (tm) Piggyback Distributed Operating System for MS Windows    <p>
+    <hr>
+    <p>
+
+    <p>
+    <a href="pages/index.z.black.d0500904.10000000.html"><i><span onmouseout="sayMessageF( 0 , 16000 )" onmouseover="sayMessageF( 'Click to climb up one level into the knowledge tree to focus on this paragraph.' , 0 )">IPDOS (tm) is a general purpose software development and deployment system for the C++ programming language.</span></i></a>
+      It is "proprietary open source", which means that you may only use it in the ways permitted by its license.
+      To use it, you must install it on a computer that runs the MS Windows operating system.
+      IPDOS (tm) is distributed only in source code form and only with this GitHub repository.
+    <p>
+    <a href="pages/index.z.black.cd9b83f2.10000000.html"><i><span onmouseout="sayMessageF( 0 , 16000 )" onmouseover="sayMessageF( 'Click to climb up one level into the knowledge tree to focus on this paragraph.' , 0 )">WARNING:</span></i></a>
+      Do not install IPDOS (tm) from any other repository and do not ever use executable files obtained in any other way.
+    <p>
+    <a href="pages/index.z.black.4bc59e25.10000000.html"><i><span onmouseout="sayMessageF( 0 , 16000 )" onmouseover="sayMessageF( 'Click to climb up one level into the knowledge tree to focus on this paragraph.' , 0 )">This is an IdeaFarm (tm) Knowledge Tree.</span></i></a>
+      A green vertical line at the end of a sentence means that you can click on that sentence to "climb up" into more detail.
+      To climb back down, click "down1" or "down2", which will appear at top left.
+      Clicking the italicized woth sentence in a paragraph climbs up wo level.
+      Clicking any other sentence in a paragraph climbs up oo levels.
+    <p>
+    <a href="pages/index.z.black.02f3d7a4.10000000.html"><i><span onmouseout="sayMessageF( 0 , 16000 )" onmouseover="sayMessageF( 'Click to climb up one level into the knowledge tree to focus on this paragraph.' , 0 )">To install IPDOS (tm), complete the following steps:</span></i></a><OL>
+      
+      <LI><a href="pages/index.z.black.54ae5467.10000000.html"><span onmouseout="sayMessageF( 0 , 16000 )" onmouseover="sayMessageF( 'Click to climb up two levels into the knowledge tree to focus on this sentence.' , 0 )">Step 1: Verify that your other browser tab is displaying https://github.com/ideafarm/ideafarm.home.1</span></a>
+      <LI><a href="pages/index.z.black.82344d90.10000000.html"><span onmouseout="sayMessageF( 0 , 16000 )" onmouseover="sayMessageF( 'Click to climb up two levels into the knowledge tree to focus on this sentence.' , 0 )">Step 2.</span></a>
+      <LI><a href="pages/index.z.black.49c64244.10000000.html"><span onmouseout="sayMessageF( 0 , 16000 )" onmouseover="sayMessageF( 'Click to climb up two levels into the knowledge tree to focus on this sentence.' , 0 )">Step 3.</span></a>
+      <LI><a href="pages/index.z.black.0089a3c2.10000000.html"><span onmouseout="sayMessageF( 0 , 16000 )" onmouseover="sayMessageF( 'Click to climb up two levels into the knowledge tree to focus on this sentence.' , 0 )">Step 4.</span></a></OL>
+      
+
+
+</html>
