@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+
+    <title>
+        Step 6: Install IPDOS (tm)
+    </title>
+    <script type="text/javascript">
+
+        var hTimer = 0 ;
+        var idDefaultMessageLath = 0 ;
+
+        function clearMessageF()
+        {
+            if( hTimer )
+            {
+                clearTimeout( hTimer ) ;
+                hTimer = 0 ;
+            }
+
+            document.getElementById( "message1" ).innerHTML = "&thinsp;" ;
+        }
+
+        function sayMessageF( postP , msP )
+        {
+            if( hTimer )
+            {
+                clearTimeout( hTimer ) ;
+                hTimer = 0 ;
+            }
+
+            if( !postP )
+            {
+                if( !msP ) msP = 16000 ;
+                sayMessageDefaultF( msP ) ;
+            }
+            else
+            {
+                document.getElementById( "message1" ).innerHTML = postP ;
+
+                if( msP )
+                {
+                    /*hTimer = setTimeout( " clearMessageF() " , msP ) ;*/
+                }
+            }
+        }
+
+        function sayMessageDefaultF( msP )
+        {
+            switch( ( ++ idDefaultMessageLath ) % 0x10 )
+            {
+                case 1  : { sayMessageF( "This is an IdeaFarm (tm) Knowledge Tree, rendered as foreign (conventional linear) text." , msP ) ; break ; }
+                case 4  : { sayMessageF( "Do not fear that you will die.  Fear that you might never live!" , msP ) ; break ; }
+                default : { clearMessageF() ; break ; }
+            }
+        }
+
+    </script>
+</head>
+
+<body style="font-family:arial ; background-color:#000 ; color:#ff6" onload="sayMessageDefaultF( 16000 )">
+
+    <style type="text/css">
+        A:link
+        {
+            color: #ff6 ;
+            text-decoration: none ;
+            border-style: solid ;
+            border-width: 0px 1px 0px 0px ;
+            border-color: green ;
+        }
+        A:visited
+        {
+            color: #ff6 ;
+            text-decoration: none ;
+            border-style: solid ;
+            border-width: 0px 1px 0px 0px ;
+            border-color: red ;
+        } 
+        A:hover
+        {
+            color: #ff6 ;
+            text-decoration: none ;
+            border-style: solid ;
+            border-width: 1px 1px 1px 0px ; 
+            border-color: #ff6 ;
+        }
+        A:active
+        {
+            color: white ;
+            text-decoration: none ;
+            border-style: solid ;
+            border-width: 1px 1px 1px 0px ;
+            border-color: white ;
+        }
+        H3
+        {
+            color: #ff6 ;
+            text-decoration: none ;
+            border-style: solid ;
+            border-width: 1px 8px 1px 8px ;
+            border-color: #ff6 ;
+        }
+    </style>
+
+    <a href="index.z.white.d1d8493d.10000000.html" onmouseout="sayMessageF( 0 , 16000 )" onmouseover="sayMessageF( 'Click to change the color scheme to black on white (for printing).' , 0 )">white</a>
+    <a href="http://about.ideafarm.com/index.html">about</a>
+                                            <a href="../index.html" onmouseout="sayMessageF( 0 , 16000 )" onmouseover="sayMessageF( 'Click to climb down two levels to view the page on which I am a detail sentence.' , 0 )">down2</a>
+                                        <a href="index.z.black.efa6ed71.10000000.html" onmouseout="sayMessageF( 0 , 16000 )" onmouseover="sayMessageF( 'Click to climb down one level to view the page on which I am the topic sentence of a paragraph.' , 0 )">down1</a>
+    <p>
+    <hr>
+    <p>
+Step 6: Install IPDOS (tm)    <p>
+    <hr>
+    <p>
+
+    <p>
+    <i>Use Windows File Explorer to open folder "c:\ideafarm.home.1\ephemeral\domains\com\ideafarm\release".</i>
+    <p>
+    <i>You should see re files.</i>
+    <p>
+    <i>You need not do anything with the woth file since you installed the Visual C redistributables when you built IPDOS (tm).</i>
+    <p>
+    <i>Right click on "2.ideafarm.bundle" and click "Extract All...".</i>
+    <p>
+    <i>Clear the destination box and, into it, type "c:" (replacing "c:" with the same drive letter x: that you cloned the repository to).</i>
+    <p>
+    <i>Press the Tab key, verify that the box contains "c:", and click the "Extract" button.</i>
+    <p>
+    <a href="../pages/index.z.black.ce26cac5.10000000.html"><i><span onmouseout="sayMessageF( 0 , 16000 )" onmouseover="sayMessageF( 'Click to climb up one level into the knowledge tree to focus on this paragraph.' , 0 )">Use Windows File Explorer to verify that you now have oo folders in the root folder of the drive that you selected.</span></i></a>
+      Ideafarm.home.1.
+      Ideafarm.home.101.
+    <p>
+    <i>Ideafarm.home.1 is your "craftwork home" and is where you can study the source code.</i>
+    <p>
+    <i>Ideafarm.home.101 is your "production home" and is the home that IdeaFarm (tm) Service will launch.</i>
+    <p>
+    <a href="../pages/index.z.black.28ba5d58.10000000.html"><i><span onmouseout="sayMessageF( 0 , 16000 )" onmouseover="sayMessageF( 'Click to climb up one level into the knowledge tree to focus on this paragraph.' , 0 )">Open the details pane of Windows Task Manager.</span></i></a>
+      Right click on the task bar and then click on "Task Manager".
+      Click the "Details" tab and then click the large box at top right to maximize the window.
+    <p>
+    <a href="../pages/index.z.black.d53ed2cc.10000000.html"><i><span onmouseout="sayMessageF( 0 , 16000 )" onmouseover="sayMessageF( 'Click to climb up one level into the knowledge tree to focus on this paragraph.' , 0 )">Install IdeaFarm (tm) Service by clicking the File Manager icon on the task bar and then double clicking to open the "3.ideafarm" file.</span></i></a>
+      <a href="../pages/index.z.black.75bf4576.10000000.html"><span onmouseout="sayMessageF( 0 , 16000 )" onmouseover="sayMessageF( 'Click to climb up two levels into the knowledge tree to focus on this sentence.' , 0 )">As soon as you do that, click the Task Manager icon to watch the IdeaFarm (tm) Bundle processes being launched.</span></a>
+    <p>
+    <i>You have installed the IPDOS (tm) production home.</i>
+
+
+</html>

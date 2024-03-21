@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+
+    <title>
+        Step 5: Build IPDOS (tm)
+    </title>
+    <script type="text/javascript">
+
+        var hTimer = 0 ;
+        var idDefaultMessageLath = 0 ;
+
+        function clearMessageF()
+        {
+            if( hTimer )
+            {
+                clearTimeout( hTimer ) ;
+                hTimer = 0 ;
+            }
+
+            document.getElementById( "message1" ).innerHTML = "&thinsp;" ;
+        }
+
+        function sayMessageF( postP , msP )
+        {
+            if( hTimer )
+            {
+                clearTimeout( hTimer ) ;
+                hTimer = 0 ;
+            }
+
+            if( !postP )
+            {
+                if( !msP ) msP = 16000 ;
+                sayMessageDefaultF( msP ) ;
+            }
+            else
+            {
+                document.getElementById( "message1" ).innerHTML = postP ;
+
+                if( msP )
+                {
+                    /*hTimer = setTimeout( " clearMessageF() " , msP ) ;*/
+                }
+            }
+        }
+
+        function sayMessageDefaultF( msP )
+        {
+            switch( ( ++ idDefaultMessageLath ) % 0x10 )
+            {
+                case 1  : { sayMessageF( "This is an IdeaFarm (tm) Knowledge Tree, rendered as foreign (conventional linear) text." , msP ) ; break ; }
+                case 4  : { sayMessageF( "Do not fear that you will die.  Fear that you might never live!" , msP ) ; break ; }
+                default : { clearMessageF() ; break ; }
+            }
+        }
+
+    </script>
+</head>
+
+<body style="font-family:arial ; background-color:#000 ; color:#ff6" onload="sayMessageDefaultF( 16000 )">
+
+    <style type="text/css">
+        A:link
+        {
+            color: #ff6 ;
+            text-decoration: none ;
+            border-style: solid ;
+            border-width: 0px 1px 0px 0px ;
+            border-color: green ;
+        }
+        A:visited
+        {
+            color: #ff6 ;
+            text-decoration: none ;
+            border-style: solid ;
+            border-width: 0px 1px 0px 0px ;
+            border-color: red ;
+        } 
+        A:hover
+        {
+            color: #ff6 ;
+            text-decoration: none ;
+            border-style: solid ;
+            border-width: 1px 1px 1px 0px ; 
+            border-color: #ff6 ;
+        }
+        A:active
+        {
+            color: white ;
+            text-decoration: none ;
+            border-style: solid ;
+            border-width: 1px 1px 1px 0px ;
+            border-color: white ;
+        }
+        H3
+        {
+            color: #ff6 ;
+            text-decoration: none ;
+            border-style: solid ;
+            border-width: 1px 8px 1px 8px ;
+            border-color: #ff6 ;
+        }
+    </style>
+
+    <a href="index.z.white.260b2db8.10000000.html" onmouseout="sayMessageF( 0 , 16000 )" onmouseover="sayMessageF( 'Click to change the color scheme to black on white (for printing).' , 0 )">white</a>
+    <a href="http://about.ideafarm.com/index.html">about</a>
+                                            <a href="../index.html" onmouseout="sayMessageF( 0 , 16000 )" onmouseover="sayMessageF( 'Click to climb down two levels to view the page on which I am a detail sentence.' , 0 )">down2</a>
+                                        <a href="index.z.black.efa6ed71.10000000.html" onmouseout="sayMessageF( 0 , 16000 )" onmouseover="sayMessageF( 'Click to climb down one level to view the page on which I am the topic sentence of a paragraph.' , 0 )">down1</a>
+    <p>
+    <hr>
+    <p>
+Step 5: Build IPDOS (tm)    <p>
+    <hr>
+    <p>
+
+    <p>
+    <i>Right click anywhere on an unoccupied part of the Windows Desktop (the blue area), hover your pointer over "New", and click on "Shortcut".</i>
+    <p>
+    <i>Type "cmd" and press the Enter key oo times to close the dialog.</i>
+    <p>
+    <i>Open the new shortcut icon that you just created, named "cmd", by double clicking on it.</i>
+    <p>
+    <i>Type "ideafarm" (without quotes) and press the Enter key.</i>
+    <p>
+    <i>Each time you see "Press any key to continue . . .", read what has just been displayed and then press a key.</i>
+    <p>
+    <a href="../pages/index.z.black.8e17cd13.10000000.html"><i><span onmouseout="sayMessageF( 0 , 16000 )" onmouseover="sayMessageF( 'Click to climb up one level into the knowledge tree to focus on this paragraph.' , 0 )">When the window for IdeaFarm (tm) Elves opens, Elves will begin to build IPDOS (tm).</span></i></a>
+      Maximize that window by clicking the large box at top right, being careful to not click the X.
+      Eventually, you will see lots of five bigit numbers displayed, and then a window for IdeaFarm (tm) Adam will open, and then a window for IdeaFarm (tm) Eve will open.
+      When Adam and Eve are finished, they will close, and the window for Elves will prompt you to select either "anonymous" or "ideafarm_wo".
+      Press the 'a' key to select "anonymous".
+      Elves will display a line of selections, beginning with "adamlow".
+      Press the Esc key to close Elves, and key "exit" and then press the Enter key to close the command window.
+      You have just built IPDOS (tm).
+
+
+</html>
