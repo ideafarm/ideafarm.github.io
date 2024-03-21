@@ -9,7 +9,7 @@
                contents of accompanying binary file
                index.link.pages.soul.blob.not.html }
 
-    {master:   "///d/ideafarm.github.io/index" }
+    {master:   "///d/web.ideafarm.github.io/index" }
 
     {labels:
 
