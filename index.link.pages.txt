@@ -15,7 +15,7 @@
 
         {label:
             {key: !myRoot }
-            {value: "IdeaFarm (tm) Piggyback Distributed Operating System for MS Windows" }
+            {value: "IdeaFarm (tm) Piggyback Distributed Operating System for MS Windows (a.k.a. IdeaFarm (tm) Bundle)" }
         }
     }
 }
